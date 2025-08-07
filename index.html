@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site-pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 </head>
     <style>
         body {
@@ -25,6 +28,7 @@
     header h1 {
         font-size: 40px;
         margin-bottom: 25px;
+        font-family: 'Dancing Script', sans-serif;
     }
 
     header p {
@@ -66,6 +70,7 @@
     .buttons {
         text-align: right;
         margin-top: 20px;
+        margin-right: 20px;
     }
 
     .buttons-visualizacao {
@@ -103,6 +108,7 @@
     <div class= "buttons">
         <button class="buttons-visualizacao" onclick="mudarGrade()">Visualisação Grade</button>
         <button class="buttons-visualizacao" onclick="mudarLista()">Visualisação Lista</button>
+        <button class="buttons-visualizacao" onclick="mudarFundo()">Fundo</button>
     </div>
 
     <main id="principal">
@@ -124,6 +130,8 @@
                     <a href="https://aws.amazon.com/pt/what-is/iot/" target="_blank">IOT</a>
                 </li>
             </ul>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQGjm_2KMn7d4g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1683914141901?e=2147483647&v=beta&t=eaZVD4EJcI2dP3-HFM2QQuSbdGEtkhBQ3x8B2otjA1g" alt="Imagem 1" width="200" height="110" title="Clique para mais informações">
+                
         </section>
         <section>
             <h2>
@@ -142,6 +150,8 @@
                     <a href="https://www.udemy.com/course/analise-de-requisitos-de-software/?srsltid=AfmBOorc3lmxIyo_wRD8-tJw4pDGH0GUgeoHRmAp_aEJ6GSp_ITX5Eba" target="_blank">Levantamento de Requesitos</a>
                 </li>
             </ul>
+                    <img src="https://www.catho.com.br/carreira-sucesso/wp-content/uploads/sites/3/2022/07/diferenca-ti-e-si.jpg" alt="Imagem 1" width="200" height="110" title="Clique para mais informações">
+                
         </section>
         <section>
             <h2>
@@ -161,6 +171,8 @@
                     <a href="https://www.petz.com.br/blog/como-brincar-com-gatos/" target="_blank">Brincar com meus gatinhos</a>
                 </li>
             </ul>
+                    <img src="https://img.freepik.com/vetores-premium/ilustracao-de-uma-pessoa-fazendo-uma-atividade-de-desenho_1150725-1623.jpg" alt="Imagem 1" width="200" height="110" title="Clique para mais informações">
+                
         </section>
         <section>
             <h2>
@@ -177,6 +189,9 @@
                     <a href="mailto:isabellasanrroman@gmail.com">E-mail pessoal</a>
                 </li>
             </ul>
+        
+                    <img src="https://img.freepik.com/vetores-premium/telefone-de-discagem-retro-em-cor-rosa-desenho-de-contorno-de-telefone-de-fio-vintage-dispositivo-eletronico-antigo-ilustracao-vetorial_758746-828.jpg?semt=ais_hybrid&w=740&q=80" alt="Imagem 1" width="200" height="140" title="Clique para mais informações">
+               
         </section>
     </main>
         <footer>
@@ -193,6 +208,11 @@
         const principal = document.getElementById('principal')
         principal.classList.remove('modo-grade')
     }
+    function mudarFundo() {
+        const principal = document.getElementById('principal')
+        principal.classList.toggle('modo-fundo')
+    }
+
 </script>
 
 </html>
