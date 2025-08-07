@@ -40,6 +40,7 @@
         padding-top: 20px;
         width: 400px;
         margin: 0 auto;
+    
     }
 
     section {
@@ -94,8 +95,13 @@
         width: 30%;
     }
 
+    .fundo {
+        background-color: rgb(255, 255, 255);
+
+    }
+
     </style>
-<body>
+<body id="body">
     <header>
         <h1>
             Bem vindo a minha página!
@@ -209,8 +215,8 @@
         principal.classList.remove('modo-grade')
     }
     function mudarFundo() {
-        const principal = document.getElementById('principal')
-        principal.classList.toggle('modo-fundo')
+        const principal = document.getElementById('body')
+        principal.classList.toggle('fundo')
     }
 
 </script>
