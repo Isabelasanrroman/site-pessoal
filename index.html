@@ -63,6 +63,32 @@
         cursor: pointer;
     }
 
+    .buttons {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .buttons-visualizacao {
+        font-size: 18px;
+       color: rgb(159, 64, 109);
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-left: 10px;
+    }
+
+    .modo-grade {
+        padding-top: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .modo-grade section {
+        width: 30%;
+    }
+
     </style>
 <body>
     <header>
@@ -73,7 +99,13 @@
             Estudante de programação
         </p>
     </header>
-    <main>
+
+    <div class= "buttons">
+        <button class="buttons-visualizacao" onclick="mudarGrade()">Visualisação Grade</button>
+        <button class="buttons-visualizacao" onclick="mudarLista()">Visualisação Lista</button>
+    </div>
+
+    <main id="principal">
         <section>
             <h2>
                 Minhas habilidades
@@ -128,4 +160,16 @@
             &copy; 2025 Isabela. Todos os direitos reservados.
         </footer>
 </body>
+
+<script>
+    function mudarGrade() {
+        const principal = document.getElementById('principal')
+        principal.classList.add('modo-grade')
+    }
+    function mudarLista() {
+        const principal = document.getElementById('principal')
+        principal.classList.remove('modo-grade')
+    }
+</script>
+
 </html>
